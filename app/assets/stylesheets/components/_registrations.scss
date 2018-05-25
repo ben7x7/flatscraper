@@ -1,0 +1,40 @@
+.container-login {
+  background-image: image-url("gva.jpeg");
+  background-size: cover;
+  height: calc(100vh - 50px);
+}
+.container-signup {
+  background-image: image-url("gva.jpeg");
+  background-size: cover;
+  height: calc(100vh - 50px);
+}
+.sign-wrapper {
+  margin-top: 40px;
+  background-color: white;
+  opacity: 0.8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px 15px;
+}
+.form-inputs {
+  padding: 0px 15px 0px 15px;
+}
+.form-actions {
+    color: white;
+    a {
+      width: 100%;
+      color: #757D87;
+      font-size: 16px;
+    }
+  }
+.sign-button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: $main;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 3px solid $main;
+  height: 50px;
+}
+
