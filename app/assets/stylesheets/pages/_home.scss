@@ -1,5 +1,22 @@
-.home {
+.container {
+  margin: 0 0;
+  padding: 0 0;
   background-image: image-url("home_flatscraper.png");
+  width: 100%;
   height: 100vh;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+
+}
+
+.home h1 {
+  font-size: 150px;
+  font-family: "noteworthy";
+  font-weight: bold;
+  color: white;
 }

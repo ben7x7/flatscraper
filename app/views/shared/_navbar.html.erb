@@ -1,7 +1,7 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo.png", height: 50 %>
+    <i class="fas fa-eye fa-3x"></i>
   <% end %>
 
   <!-- Right Navigation -->
@@ -10,9 +10,11 @@
     <% if user_signed_in? %>
 
       <!-- Links when logged in -->
-      <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Studio", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "2 Rooms", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "3 Rooms", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "4 Rooms", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "5 Rooms", "#", class: "navbar-wagon-item navbar-wagon-link" %>
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
@@ -31,7 +33,7 @@
             </li>
             <li>
               <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+                <i class="fas fa-sign-out-alt"></i>  <%= t(".sign_out", default: "Log out") %>
               <% end %>
             </li>
           </ul>
@@ -39,7 +41,9 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to new_user_session_path do %>
+        <i class="fas fa-sign-in-alt fa-2x"></i> <%= t('.sign_in', default: "") %>
+      <% end %>
     <% end %>
   </div>
 
@@ -55,4 +59,3 @@
     </div>
   </div>
 </div>
-
