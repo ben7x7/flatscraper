@@ -1,1 +1,43 @@
-index.html.erb
+<div class="container-index-accomodation">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="filter">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="index-accomadtion">
+        <table id="table-index-accomodation">
+          <thead>
+            <tr>
+              <th class="accomodation-category">CAT</th>
+              <th class="accomodation-rooms">ROOMS</th>
+              <th class="accomodation-price">PRICE</th>
+              <th class="accomodation-address">ADDRESS</th>
+              <th class="accomodation-availability">FROM</th>
+              <th class="accomodation-title">TITLE</th>
+              <th class="accomodation-links">LINK</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @accomodations.each do |accomodation| %>
+              <tr class="accomodation">
+                <td><%= accomodation.category %></td>
+                <td><%= accomodation.rooms %></td>
+                <td><%= accomodation.price %></td>
+                <td><%= accomodation.address %></td>
+                <td><%= accomodation.availability %></td>
+                <td><%= accomodation.title %></td>
+                <td><%= accomodation.link %></td>
+              </tr>
+            <% end %>
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
