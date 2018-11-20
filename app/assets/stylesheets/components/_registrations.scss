@@ -9,30 +9,30 @@
   height: 100vh;
 }
 .sign-wrapper {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   background-color: white;
   opacity: 0.8;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 15px 15px;
+  border: .0625rem solid #ccc;
+  border-radius: .3125rem;
+  padding: .9375rem .9375rem;
 }
 .form-inputs {
-  padding: 0px 15px 0px 15px;
+  padding: 0 .9375rem 0 .9375rem;
 }
 .form-actions {
     color: white;
     a {
       width: 100%;
       color: #757D87;
-      font-size: 1.6rem;
+      font-size: 1rem;
     }
   }
 .sign-button {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: .9375rem;
+  margin-bottom: .9375rem;
   width: 100%;
   background-color: $main;
-  border-radius: 0.5rem;
+  border-radius: 0.3125rem;
   font-weight: bold;
   border: 0.185rem solid $main;
   height: 5rem;
