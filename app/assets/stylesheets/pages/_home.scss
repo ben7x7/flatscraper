@@ -1,8 +1,7 @@
 .container {
   margin: 0 0;
   padding: 0 0;
-  background-image: image-url("background_logo.png");
-  width: 100vh;
+  background-image: image-url("background.png");
   height: 100vh;
   background-size: cover;
   display: flex;
@@ -17,5 +16,5 @@
 .home h1 {
   font-family: "noteworthy";
   font-weight: bold;
-  color: white;
+  color: #273133;
 }

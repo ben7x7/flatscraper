@@ -8,30 +8,30 @@
   </div>
 
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-12">
       <div class="index-accomadtion">
         <table id="table-index-accomodation">
           <thead>
             <tr>
-              <th class="accomodation-category">CAT</th>
-              <th class="accomodation-rooms">ROOMS</th>
-              <th class="accomodation-price">PRICE</th>
-              <th class="accomodation-address">ADDRESS</th>
-              <th class="accomodation-availability">FROM</th>
-              <th class="accomodation-title">TITLE</th>
-              <th class="accomodation-links">LINK</th>
+              <th class="acc-category">CAT</th>
+              <th class="acc-rooms">ROOMS</th>
+              <th class="acc-price">PRICE</th>
+              <th class="acc-address">ADDRESS</th>
+              <th class="acc-availability">FROM</th>
+              <th class="acc-title">TITLE</th>
+              <th class="acc-links">LINK</th>
             </tr>
           </thead>
           <tbody>
             <% @accomodations.each do |accomodation| %>
               <tr class="accomodation">
-                <td><%= accomodation.category %></td>
-                <td><%= accomodation.rooms %></td>
-                <td><%= accomodation.price %></td>
-                <td><%= accomodation.address %></td>
-                <td><%= accomodation.availability %></td>
-                <td><%= accomodation.title %></td>
-                <td><%= accomodation.link %></td>
+                <td class="acc-category"><%= accomodation.category %></td>
+                <td class="acc-rooms"><%= accomodation.rooms %></td>
+                <td class="acc-price"><%= accomodation.price %></td>
+                <td class="acc-address"><%= accomodation.address %></td>
+                <td class="acc-availability"><%= accomodation.availability %></td>
+                <td class="acc-title"><%= accomodation.title %></td>
+                <td class="acc-links"><%= accomodation.link %></td>
               </tr>
             <% end %>
           </tbody>

@@ -1,0 +1,39 @@
+.index-accomadtion {
+  text-align: center;
+  padding: 0 1.5rem;
+}
+#table-index-accomodation {
+  width: 100%;
+  margin: 1.25rem auto;
+}
+th,
+td {
+  font-size: .9325rem;
+  padding: .625rem
+}
+.acc-category {
+  width: 10%
+}
+.acc-rooms {
+  width: 5%
+}
+.acc-price {
+  width: 10%
+}
+.acc-address {
+  width: 30%;
+  text-align: left !important;
+}
+.acc-availability {
+  width: 15%
+}
+.acc-title {
+  width: 20%;
+  text-align: left !important;
+}
+.acc-links {
+  width: 10%;
+}
+thead, tr:nth-child(even) {
+    background: #BFD4A8;
+}
