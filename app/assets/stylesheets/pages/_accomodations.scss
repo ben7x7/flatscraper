@@ -1,3 +1,46 @@
+.search-bar {
+  margin: .975rem 1.825rem;
+}
+.cat-lab {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #425d21;
+}
+.filter-1,
+.filter-2,
+.filter-3,
+.filter-4 {
+  flex-direction: column;
+  border: solid .0625rem #B6B5B6;
+  margin: 0 .3125rem;
+  padding: 0 1rem;
+  border-radius: .3125rem;
+  height: 4.5rem;
+  justify-content: space-around !important;
+}
+.loupe {
+  i {
+    width: 3.125rem 3.125rem;
+  }
+}
+.wrap-filters {
+  display: flex;
+}
+#search-button {
+  background-color: #B0C39B;
+  color: #425d21;
+  font-size: 1.125rem;
+  font-weight: bold;
+  height: 4.5rem;
+  border: solid .1875rem #425d21;
+  border-radius: .3125rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: #425d21;
+  }
+}
 .index-accomadtion {
   text-align: center;
   padding: 0 1.5rem;

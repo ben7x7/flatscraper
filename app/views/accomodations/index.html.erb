@@ -1,15 +1,81 @@
 <div class="container-index-accomodation">
   <div class="row">
     <div class="col-12">
-      <div class="filter">
-
+      <div class="search-bar">
+        <form class="form-inline" action="<%= accomodations_path %>" role="search">
+          <div class="form-group">
+            <div class="filter-1 shadow">
+              <label class="cat-lab" for="filter-category">CATEGORIES</label>
+              <div class="wrap-filters">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="category[]" value="apt" <%= "checked" if params[:category]&.include? "apt" %>>
+                  <label class="form-check-label" for="category-apt">apt</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="category[]" value="house" <%= "checked" if params[:category]&.include? "house" %>>
+                  <label class="form-check-label" for="category-house">house</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="filter-2 shadow">
+              <label class="cat-lab" for="filter-rooms">ROOMS</label>
+              <div class="wrap-filters">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="room[]" value="one" <%= "checked" if params[:room]&.include? "one" %>>
+                  <label class="form-check-label" action="<%= accomodations_path %>" methode="get" for="room1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="room[]" value="two" <%= "checked" if params[:room]&.include? "two" %>>
+                  <label class="form-check-label" for="room2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="room[]" value="three" <%= "checked" if params[:room]&.include? "three" %>>
+                  <label class="form-check-label" for="room3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="room[]" value="four" <%= "checked" if params[:room]&.include? "four" %>>
+                  <label class="form-check-label" for="room4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="room[]" value="over" <%= "checked" if params[:room]&.include? "over" %>>
+                  <label class="form-check-label" for="roomOver">5 & over</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="filter-3 shadow">
+              <label class="cat-lab" for="filter-rive">RIVE SIDE</label>
+              <div class="wrap-filters">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="address[]" value="left" <%= "checked" if params[:address]&.include? "left" %>>
+                  <label class="form-check-label" for="rive-left">Left</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="address[]" value="right" <%= "checked" if params[:address]&.include? "right" %>>
+                  <label class="form-check-label" for="rive-right">Right</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="filter-4 shadow">
+              <label class="cat-lab" for="filter-rive">PRICE RANGE</label>
+              <input type="range" class="custom.range" id="min-price">
+              <input type="range" class="custom.range" id="max-price">
+            </div>
+          </div>
+          <button type="submit" class="mybtn shadow" id="search-button">Search !</button>
+        </form>
       </div>
     </div>
   </div>
 
   <div class="row">
     <div class="col-12">
-      <div class="index-accomadtion">
+      <div class="index-accomadtion shadow">
         <table id="table-index-accomodation">
           <thead>
             <tr>
@@ -26,7 +92,7 @@
             <% @accomodations.each do |accomodation| %>
               <tr class="accomodation">
                 <td class="acc-category"><%= accomodation.category %></td>
-                <td class="acc-rooms"><%= accomodation.rooms %></td>
+                <td class="acc-rooms"><%= accomodation.room %></td>
                 <td class="acc-price"><%= accomodation.price %></td>
                 <td class="acc-address"><%= accomodation.address %></td>
                 <td class="acc-availability"><%= accomodation.availability %></td>

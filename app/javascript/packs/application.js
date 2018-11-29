@@ -13,7 +13,7 @@ const accomodations = {
   availability: 'now',
   address: '1207 geneve, rue du chateau 34',
   title: 'apt to rent',
-  description: 'niceflat in the center'
+  description: 'nice flat in the center'
 };
 
 const listAccomodations = document.getElementById('table-index-accomodation');
